@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// body {
+//   //    background-color: #000;
+//   height: 300vh;
+// }
+
+header {
+  position: fixed;
+  top: 0;
+  //   left: ;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 30px 5%;
+  background-color: #fff;
+  box-shadow: rgb(145, 98, 98);
+
+  //   .sticky {
+  //     padding: 40px 100px;
+  //     background-color: rgb(167, 156, 156);
+  //   }
+
+  .logo {
+    position: relative;
+  }
+
+  ul {
+    // position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    li {
+      //   position: relative;
+      list-style: none;
+
+      a {
+        // position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #000000;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        transition: 0.6s;
+        &:hover {
+          background-color: #ddd;
+          padding: 2% 0;
+        }
+      }
+    }
+  }
+
+  #humburger {
+    display: none;
+    background-color: #f8f3f3;
+    cursor: pointer;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #050404;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.hero {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .hero-left {
+    max-width: 640px;
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 82px;
+      letter-spacing: 2px;
+      margin-bottom: 34px;
+    }
+
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #666666;
+      max-width: 590px;
+      margin-bottom: 38px;
+    }
+
+    .btn {
+      margin-top: 38px !important;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      padding: 17px 30px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #000000;
+      text-decoration: none;
+      span {
+        padding-left: 10px;
+      }
+    }
+    .btn:hover {
+      background: #000000;
+      color: #ddd;
+      transition: 0.6s;
+    }
+  }
+}
+
+.services {
+  padding-top: 150px;
+  .services-title {
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #ff5e69;
+    }
+    h2 {
+      max-width: 750px;
+      margin: 20px auto;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 59px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #000000;
+      margin-bottom: 100px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    li {
+      list-style-type: none;
+      h4 {
+        margin-top: 30px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000000;
+      }
+      p {
+        width: 270px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      ul {
+        flex-direction: column;
+        justify-content: start !important;
+        left: 0 !important;
+        li {
+          margin-left: 15px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+          list-style-type: square;
+        }
+      }
+    }
+  }
+}
+
+.projects {
+  margin-top: 150px;
+  margin-bottom: 100px;
+ 
+    
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #b16cea;
+        margin-bottom: 20px;
+      }
+      h2 {
+        max-width: 540px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 59px;
+        letter-spacing: 1px;
+        color: #000000;
+        span {
+
+        }
+      }
+      
+    }
+    .btn1 {
+        margin-top: 38px !important;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        padding: 17px 30px;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000000;
+        text-decoration: none;
+        
+      }
+      .btn1:hover {
+        background: #000000;
+        color: #ddd;
+        transition: 0.6s;
+      }
+  }
+
+
+.to-top {
+  position: relative;
+  background-color: black;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: blue;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.br {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(212, 42, 42);
+  border-radius: 90px 10px 90px 5px;
+}
+
+.g {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(42, 150, 212);
+  border-radius: 5px 90px 5px 90px;
+}
+
+.o {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(42, 212, 99);
+  border-radius: 70px 5px 70px 5px;
+}
+
+.l {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(79, 42, 212);
+  border-radius: 5px 70px 5px 70px;
+}
+
+@media only screen and(max-width: 992px) {
+}

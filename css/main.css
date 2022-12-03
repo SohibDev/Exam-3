@@ -1,1 +1,337 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 30px 5%;
+  background-color: #fff;
+  box-shadow: rgb(145, 98, 98);
+}
+header .logo {
+  position: relative;
+}
+header ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  transition: 0.6s;
+}
+header ul li a:hover {
+  background-color: #ddd;
+  padding: 2% 0;
+}
+header #humburger {
+  display: none;
+  background-color: #f8f3f3;
+  cursor: pointer;
+}
+header #humburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #050404;
+  margin-bottom: 3px;
+}
+
+.hero {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .hero-left {
+  max-width: 640px;
+}
+.hero .hero-left h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: 2px;
+  margin-bottom: 34px;
+}
+.hero .hero-left p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #666666;
+  max-width: 590px;
+  margin-bottom: 38px;
+}
+.hero .hero-left .btn {
+  margin-top: 38px !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  padding: 17px 30px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+.hero .hero-left .btn span {
+  padding-left: 10px;
+}
+.hero .hero-left .btn:hover {
+  background: #000000;
+  color: #ddd;
+  transition: 0.6s;
+}
+
+.services {
+  padding-top: 150px;
+}
+.services .services-title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ff5e69;
+}
+.services .services-title h2 {
+  max-width: 750px;
+  margin: 20px auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-bottom: 100px;
+}
+.services ul {
+  display: flex;
+  justify-content: space-between;
+}
+.services ul li {
+  list-style-type: none;
+}
+.services ul li h4 {
+  margin-top: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.services ul li p {
+  width: 270px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.services ul li ul {
+  flex-direction: column;
+  justify-content: start !important;
+  left: 0 !important;
+}
+.services ul li ul li {
+  margin-left: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  list-style-type: square;
+}
+
+.projects {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.projects .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .top div p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #b16cea;
+  margin-bottom: 20px;
+}
+.projects .top div h2 {
+  max-width: 540px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.projects .top .btn1 {
+  margin-top: 38px !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  padding: 17px 30px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+.projects .top .btn1:hover {
+  background: #000000;
+  color: #ddd;
+  transition: 0.6s;
+}
+.projects .nimadir {
+  width: 98%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+}
+.projects .nimadir::-webkit-scrollbar {
+  display: none;
+}
+.projects .nimadir .bottom {
+  min-width: 24%;
+  height: 90%;
+  background-color: whitesmoke;
+  margin: 0 20px 0 0;
+  border-radius: 20px;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+.projects .nimadir .bottom .bottom-pic {
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.projects .nimadir .bottom .bottom-pic img {
+  width: 100%;
+}
+.projects .con {
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+}
+.projects .con:hover {
+  background-color: #222;
+  color: white;
+}
+
+.to-top {
+  position: relative;
+  background-color: black;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: blue;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.br {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(212, 42, 42);
+  border-radius: 90px 10px 90px 5px;
+}
+
+.g {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(42, 150, 212);
+  border-radius: 5px 90px 5px 90px;
+}
+
+.o {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(42, 212, 99);
+  border-radius: 70px 5px 70px 5px;
+}
+
+.l {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(79, 42, 212);
+  border-radius: 5px 70px 5px 70px;
+}/*# sourceMappingURL=main.css.map */
